@@ -48,7 +48,7 @@ Please name them like after the node name. As an example: machinename.dns should
 
 ## Examples
 
-### File Agent, File Scout24Host.yaml:
+### File Agent, File client_example.yaml:
 
     Client:
      -
@@ -70,7 +70,7 @@ Please name them like after the node name. As an example: machinename.dns should
       preCommand: ''
       postCommand: ''
 
-### VM Snapshot, File: Scout24VM.yaml:
+### VM Snapshot, File: vm_example.yaml:
 
     Client:
      -
