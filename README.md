@@ -48,7 +48,7 @@ Please name them like after the node name. As an example: machinename.dns should
 
 ## Examples
 
-### File Agent, File client_example.yaml:
+### File Agent, File agent_example.yaml:
 
     Client:
      -
