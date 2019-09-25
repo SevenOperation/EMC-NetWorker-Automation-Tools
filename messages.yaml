@@ -1,0 +1,39 @@
+Messages:
+    - 
+     message: "Unable to create session channel with nsrexecd"
+    - 
+     message: "No such file or directory"
+    - 
+     message: "Cancelled by the user"
+    - 
+     message: "Remote system error"
+    - 
+     message: "Bytes changed during save"
+    - 
+     message: "Unable to connect to the target media device through the nsrmmd process"
+    - 
+     message: "size grew during save"
+    - 
+     message: "Unable to create a snapshot. A block based backup does not support FAT32 volumes"
+    - 
+     message: "Unable to perform the ASR backup: cannot obtain the VSS MBS status"
+    - 
+     message: "Termination request was sent to job"
+    - 
+     message: "savefs"
+    - 
+     message: "changed during save"
+    - 
+     message: "could not be opened"
+    - 
+     message: "The backup"
+    - 
+     message: "Unknown"
+    - 
+     message: "Running the backup on the client"
+    - 
+     message: "Exited with exit code: 1"
+    - 
+     message: "Exited with exit code: 5"
+    -
+     message: "Failed to open file/directory"

@@ -1,0 +1,44 @@
+Config:
+ networker_urls:
+  base: "/nwrestapi/v3/global/"
+  update:
+   path: "clients/"
+   method: "PUT"
+  create:
+   path: "clients/"
+   method: "POST"
+  get:
+   path: "clients/"
+   method: "GET"
+  workflow:
+   create:
+    pathpolicie: "protectionpolicies/"
+    pathworkflow: "workflows/"
+    method: "POST"
+  group:
+   create:
+    path: 'protectiongroups/'
+    method: 'POST'
+  policie:
+   create:
+    path: 'protectionpolicies/'
+    method: 'POST'
+  vm:
+   add:
+    path: 'protectiongroups/'
+    path2: 'op/updatevmwareworkitems/'
+    method: 'POST'
+   get:
+    path: 'vmware/vcenters/'
+    method: 'GET'
+  vmcenter:
+   get:
+    path: 'vmware/vcenters/'
+    method: 'GET'
+ files:
+  basedir: "script-config/"
+  frequencyFile: "frequencys.yaml"
+  maillayout: "layout.html"
+  locations: "locations.yaml"
+  frequencyToTime: "frequencys_to_time.yaml"
+  archiveDirectories: "archive_Directories.yaml"

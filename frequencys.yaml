@@ -1,0 +1,14 @@
+## inherits the frequency mapping. name the data that is in the backup yamls and value what will be used for the networker
+frequencys:
+        - 
+         name: "every day"
+         value: ""
+        - 
+         name: "friday"
+         value: "FRI_"
+        - 
+         name: "saturday"
+         value: "SAT_"
+        - 
+         name: "sunday"
+         value: "SUN_"

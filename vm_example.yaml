@@ -1,0 +1,12 @@
+Client:
+ - #Don't forget a space after the '-' because it wouldn't work then
+  hostname: '<hostname>' #The VMware VM Name in needed here, case sensitiv.
+  mail: ['<email>'] #A list of mail addresses which get informed when something is not right with the node, the mails are seperated by ',' example: ['mail','anothermail',...]
+  owner: ['Name of the contact'] #This is the Name which will show up in the Mail so please don't let it empty and try to have them in the same order like the mails.
+  starttime: '07'#So this represents the starttime when the backup should begin, valid times are only hours and only two values example: '1' not valid '01' valid the backup would begin at 01:00 ,also possible are 1Y 10Y but only if retentionclass is set to Archive
+  frequency: 'Every Day' #When a backup should be made valid Options are: 'Every Day', 'FRIDAY', 'Saturday', 'Sunday'. Be aware that you have to specify the values as written because the system is case sensitive
+  retentionclass: 'R1' #This Defines the first part of the group name
+  backupType: 'VM' #If you want to backup a vm then write VM , no other value accepted
+  vcenter: '' #Optional parameter, which defines if a specific vcenter should be searched for the vm first
+  error_report: 'true' #If this is set to false or this is missing, all contacts , specified in mail will get reports even when the backup is succeeded.
+  location: '' #Optional parameter valid values are specified in the locations.yaml otherwise don't add it.

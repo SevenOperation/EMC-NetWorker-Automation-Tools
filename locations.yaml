@@ -1,0 +1,6 @@
+locations:
+#here you specify you locations (a mapping) for the networker groups when you use them
+#Example
+# -
+#  name: "A"
+#  value: 'B'

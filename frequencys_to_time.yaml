@@ -1,0 +1,13 @@
+toTime:
+   - 
+    name: "every day"
+    value : 24
+   - 
+    name: "friday"
+    value: 168
+   - 
+    name: "saturday"
+    value: 168
+   - 
+    name: "sunday"
+    value: 168

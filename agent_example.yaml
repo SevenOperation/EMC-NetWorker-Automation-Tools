@@ -1,0 +1,21 @@
+Client:
+ - #Don't forget a space after the '-' because it wouldn't work then
+  aliases: ['<alias>']  #This is a list of aliases you can leave it empty if you wish but it would be nice if you just add the node name like this inside
+  hostname: '<hostname>' #Here you have to specify the full specified host name except it is a VM you want to add then the node name is enough
+  mail: ['<mail address>'] #A list of mail addresses which get informed when something is not right with the node, the mails are seperated by ',' example: ['mail','anothermail',...]
+  owner: ['Name of the contact'] #This is the Name which will show up in the Mail so please don't let it empty and try to have them in the same order like the mails.
+  starttime: '05' #So this represents the starttime when the backup should begin, valid times are only hours and only two values example: '1' not valid '01' valid the backup would begin at 01:00
+  clientType: 'AGENT' #Just leave it like this.
+  parallelism: 12 #Just leave it like this
+  error_report: 'true' #If this is set to false or this is missing, all contacts , specified in mail will get reports even when the backup is succeeded.
+  scheduledBackup: 'true' #If you want to add this node but you don't want any backups to be made right now just change this to 'false'. Please make sure you only used lower letters
+  frequency: 'Every Day' #When a backup should be made valid Options are: 'Every Day', 'FRIDAY', 'Saturday', 'Sunday'. Be aware that you have to specify the values as written because the system is case sensitive
+  retentionclass: 'R1' #This defines the first pat of the networker group the entry will be created in
+  backupType: 'Filesystem' #Here you specify whether you want to save a VM or only specific Filesystems. Valid options: 'VM' or 'Filesystem'
+  saveSets: ['<directory>'] #Here you specify which filesystems should get a backup please make sure you want to save filesystems on windows machine use "\\" instead of "\" Examples: "C:\\", "D:\\" 'DISASTER_RECOVERY:'
+  or use 'C:\'
+  location: '' #Optional parameter valid values can be specified in the locations.yaml otherwise don't add it. 
+  parallelSaveStreams: 'true' # Enables or disable parallel save streams per save set Valid options are: 'true' , 'false' or delete this parameter then false will be used
+  preCommand: ''  # Optional String
+  postCommand: '' # Optional String
+  blockBasedBackup: 'false' # Optional Set to true to enable block based backup, otherwise set to false or don't add it to the yaml, then false will be assumed Only for Clients

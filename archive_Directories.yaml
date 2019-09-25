@@ -1,0 +1,5 @@
+Directories:
+#Here you specify what directories inherit archive data
+#Example:
+# -
+#  Name: "Archive_Folder"
